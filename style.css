@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #2E3135;
+    --secondery-color: #E65F78;
+    --pure-color: #e0ebeb;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: poppins;
+    overflow-x: hidden;
+}
+.about {
+    background: var(--primary-color);
+    color: var(--pure-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about_content {
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+}
+.about_content .about_image img {
+    width: 600px;
+    background-color: #3b3e42;
+    border: 3px solid #4d5052;
+    border-radius: .25rem;
+    opacity: .8;
+    margin-right: 2rem;
+}
+.about_content .about_text .about_text_content h2 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+.about_content .about_text .about_text_content h2 span {
+    font-weight: 700;
+}
+.about_content .about_text .about_text_content h4 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.about_content .about_text .about_text_content h4 span {
+    color: var(--secondery-color);
+}
+.about_content .about_text .about_text_content p {
+    color: #a0a0ac;
+    margin-bottom: 1rem;
+}
+.about_content .about_text .about_text_icon  a {
+    margin: 10px;
+    color: #a0a0ac;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: 2px solid #6b6e6f;
+    line-height: 38px;
+    transition: all 0.5s;
+    text-align: center;
+}
+.about_content .about_text .about_text_icon  a:hover {
+    border: 2px solid var(--secondery-color);
+    color: var(--secondery-color);
+}
+
+@media screen and (max-width: 1100px){
+    .about {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .about_content {
+        flex-direction: column;
+    }
+    .about_content .about_image img {
+        width: 450px;
+        margin: .6rem;
+    }
+    .about_content .about_text {
+        padding: 20px;
+    }
+}
